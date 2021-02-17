@@ -3,27 +3,11 @@ export default [{
   name: '各类demo',
   icon: { name: 'PieChartOutlined', type: 'component' },
   children: [
-    {
-      path: 'api',
-      name: '接口页面',
-      component: () => import('@/views/demo/Api'),
-    },
-    {
-      path: '/demo/antd',
-      name: 'Antd页面',
-      component: () => import('@/views/demo/Antd'),
-    },
-    {
-      path: '/demo/mobx',
-      name: 'Mobx页面',
-      component: () => import('@/views/demo/Mobx'),
-      hidden: true
-    },
-    {
-      path: '/demo/class',
-      name: '样式页面',
-      component: () => import('@/views/demo/Classnames'),
-    },
+    // {
+    //   path: 'api',
+    //   name: '接口页面',
+    //   component: () => import('@/views/demo/Api'),
+    // }
   ]
 }];
 

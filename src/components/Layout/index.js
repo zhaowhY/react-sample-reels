@@ -25,13 +25,16 @@ class Layout extends Component {
 
     return (
       <div className={styles.layout}>
+
         {sidebarVisible && (<div className={styles['layout-sidebar']}>
+          <h1 style={{ color: '#67C23A', margin: 16 }}>React项目</h1>
+
           <Button
             type="primary"
-            style={{ margin: 16 }}
+            style={{ margin: '8px 16px' }}
             onClick={this.hideSidebar}
           >
-            隐藏左边导航栏
+            隐藏左侧导航栏
           </Button>
           <SideBar></SideBar>
         </div>)}

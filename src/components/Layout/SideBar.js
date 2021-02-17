@@ -4,6 +4,8 @@ import {
 } from 'antd';
 import { withRouter } from 'react-router-dom';
 import { layoutRoutes } from '@/router';
+import { externalLinks } from '@/router/modules';
+
 import componentIcon from '@/assets/menu/component';
 
 const { SubMenu } = Menu;
@@ -58,18 +60,45 @@ class Sidebar extends Component {
     );
   })
 
+  skipToLink = ({ key: path }) => {
+    window.open(path, '_blank');
+  }
+
   render() {
     const { collapsed } = this.state;
+    const { history: { location: { pathname } } } = this.props;
     return (
       <div>
         <Menu
-          theme="dark"
           mode="inline"
+          defaultSelectedKeys={pathname}
           onSelect={this.menuSelect}
           inlineCollapsed={collapsed}
         >
           {this.formatLayoutMenu(layoutRoutes)}
         </Menu>
+
+        <h2 style={{ color: '#67C23A', margin: 16, marginTop: 30 }}>外链项目</h2>
+        <Menu
+          mode="inline"
+          onSelect={this.skipToLink}
+          inlineCollapsed={collapsed}
+        >
+          {externalLinks.map((link) => (
+            <Menu.Item key={link.path}>
+              {link.name}
+            </Menu.Item>
+          ))}
+        </Menu>
+
+        <h3
+          style={{
+            color: '#67C23A', margin: 16, marginTop: 30, cursor: 'pointer'
+          }}
+          onClick={() => window.open('https://kongkong99.github.io/sample-reels/#/3d-wordCloud', '_blank')}
+        >
+          Vue项目连接
+        </h3>
       </div>
     );
   }

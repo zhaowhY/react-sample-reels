@@ -6,23 +6,25 @@
  * meta: {icon: ''} // 路由附带信息
  */
 
-import demo from './demo';
+const routes = [
+  {
+    path: '/home',
+    name: '首页',
+    component: () => import('@/views/Home/index.js'),
+  },
+];
 
 export default [
   {
     path: '/',
     redirect: '/home'
   },
+  ...routes,
+];
+
+export const externalLinks = [
   {
-    path: '/home',
-    name: '首页',
-    icon: { name: 'icon-logo.png', type: 'img' },
-    component: () => import('@/views/Home'),
-  },
-  ...demo,
-  {
-    path: '*',
-    component: () => import('@/views/404'),
-    hidden: true
+    path: 'https://kongkong99.github.io/react-tinymce/',
+    name: '富文本编辑器'
   }
 ];

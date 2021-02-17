@@ -55,15 +55,11 @@ const addCustomize = () => (config) => {
 rewriteBuildPath = () => (config) => {
   if (!config.output.path) return config; // 判断是否为build操作(即config.output.path是否存在)，否，则不往下执行
   const paths = require("react-scripts/config/paths");
-  paths.appBuild = path.join(path.dirname(paths.appBuild), "dist");
-  config.output.path = path.join(path.dirname(config.output.path), "dist");
+  paths.appBuild = path.join(path.dirname(paths.appBuild), "docs");
+  config.output.path = path.join(path.dirname(config.output.path), "docs");
   config.output.publicPath = './'; // 修改相对路径
   return config;
 }
-
-
-
-
 
 module.exports = {
   webpack: override(
