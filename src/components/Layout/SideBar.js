@@ -78,7 +78,14 @@ class Sidebar extends Component {
           {this.formatLayoutMenu(layoutRoutes)}
         </Menu>
 
-        <h2 style={{ color: '#67C23A', margin: 16, marginTop: 30 }}>外链项目</h2>
+        <h2 style={{
+          color: '#67C23A',
+          margin: 16,
+          marginTop: 30
+        }}
+        >
+          React外链项目
+        </h2>
         <Menu
           mode="inline"
           onSelect={this.skipToLink}
@@ -91,14 +98,6 @@ class Sidebar extends Component {
           ))}
         </Menu>
 
-        <h3
-          style={{
-            color: '#67C23A', margin: 16, marginTop: 30, cursor: 'pointer'
-          }}
-          onClick={() => window.open('https://kongkong99.github.io/sample-reels/#/3d-wordCloud', '_blank')}
-        >
-          Vue项目连接
-        </h3>
       </div>
     );
   }

@@ -1,6 +1,14 @@
-#react-cli
+> Vue作品集 [在线链接](https://kongkong99.github.io/sample-reels/)
+## React作品集 [在线链接](https://kongkong99.github.io/react-sample-reels/)
 
-## build step
+**项目代码路径**: src/views/**
+
+- [PDF在线预览](https://kongkong99.github.io/react-sample-reels/#/pdf) 代码路径: src/views/2D-round
+
+## React外链项目
+- [富文本编辑器](https://kongkong99.github.io/react-tinymce/) [仓库地址](https://github.com/kongkong99/react-tinymce/)
+
+### build step
 
 ``` bash
 # install dependencies
@@ -8,33 +16,4 @@ npm install
 
 # serve with hot reload at localhost:8080
 npm start
-
-# build for production with minification
-npm run build
 ```
-
-# 项目结构
-
-### 目录结构
-  ```bash
-  - public
-    - favicon.ico
-    - index.html  # 入口html
-  - src   # 业务代码
-    - assets  # 图片，字体等资源
-    - api # 接口交互模块
-    - config # 配置变量
-    - utils # 工具函数
-    - styles # 全局样式
-    - components  # 公共组件
-    - router   # react router
-    - store   # mobx
-    - views   # 视图组件
-
-    - App.js
-    - index.js   # 入口js
-    
-  - static # 静态文件
-  - .env.[mode] # 环境变量
-  - README.MD
-  ```

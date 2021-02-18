@@ -8,16 +8,16 @@
 
 const routes = [
   {
-    path: '/home',
-    name: '首页',
-    component: () => import('@/views/Home/index.js'),
+    path: '/pdf',
+    name: 'PDF在线预览',
+    component: () => import('@/views/PDF/index.js'),
   },
 ];
 
 export default [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/pdf'
   },
   ...routes,
 ];
