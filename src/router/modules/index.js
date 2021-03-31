@@ -12,6 +12,11 @@ const routes = [
     name: 'PDF在线预览',
     component: () => import('@/views/PDF/index.js'),
   },
+  {
+    path: '/virtual-scroll',
+    name: '虚拟滚动',
+    component: () => import('@/views/VirtualScroll'),
+  },
 ];
 
 export default [
