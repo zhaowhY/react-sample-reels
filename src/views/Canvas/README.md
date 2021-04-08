@@ -93,7 +93,7 @@ ctx.restore(); // 恢复初始状态
 window.requestAnimationFrame(draw); // 开启下一帧
 ```
 
-# 实战案类
+# 实战案类 [连接](https://kongkong99.github.io/react-sample-reels/#/canvas)
 ## 点击某个图形并改变其颜色
 ```js
 const colorArr = ['red', 'blue', 'yellow', 'orange', 'pink'];

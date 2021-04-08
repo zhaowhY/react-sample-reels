@@ -4,7 +4,8 @@
 **项目代码路径**: src/views/**
 
 - [PDF在线预览](https://kongkong99.github.io/react-sample-reels/#/pdf) 代码路径: src/views/2D-round
-- [PDF在线预览](https://kongkong99.github.io/react-sample-reels/#/virtual-scroll) 代码路径: src/views/VirtualScroll
+- [虚拟滚动](https://kongkong99.github.io/react-sample-reels/#/virtual-scroll) 代码路径: src/views/VirtualScroll
+- [Canvas](https://kongkong99.github.io/react-sample-reels/#/canvas) 代码路径: src/views/Canvas
 
 ## React外链项目
 - [富文本编辑器](https://kongkong99.github.io/react-tinymce/) [仓库地址](https://github.com/kongkong99/react-tinymce/)
