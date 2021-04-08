@@ -17,6 +17,11 @@ const routes = [
     name: '虚拟滚动',
     component: () => import('@/views/VirtualScroll'),
   },
+  {
+    path: '/canvas',
+    name: 'Canvas',
+    component: () => import('@/views/Canvas'),
+  },
 ];
 
 export default [
