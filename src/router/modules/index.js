@@ -22,6 +22,11 @@ const routes = [
     name: 'Canvas',
     component: () => import('@/views/Canvas'),
   },
+  {
+    path: '/lazyloadimg',
+    name: '图片懒加载',
+    component: () => import('@/views/LazyLoadImg'),
+  },
 ];
 
 export default [

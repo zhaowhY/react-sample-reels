@@ -25,7 +25,6 @@ class Layout extends Component {
 
     return (
       <div className={styles.layout}>
-
         {sidebarVisible && (<div className={styles['layout-sidebar']}>
           <h1 style={{ color: '#67C23A', margin: 16 }}>React作品集</h1>
           <h4
