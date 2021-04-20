@@ -4,10 +4,8 @@ import React, {
 import { observer } from 'mobx-react';
 import styles from './index.module.less';
 
-// eslint-disable-next-line
-var offset = 10;
-// eslint-disable-next-line
-var itemHeight = 40;
+const offset = 10;
+const itemHeight = 40;
 const containerHeight = 410;
 const visibleCount = Math.ceil(containerHeight / itemHeight);
 
