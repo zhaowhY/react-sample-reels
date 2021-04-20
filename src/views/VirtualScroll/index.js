@@ -4,10 +4,10 @@ import React, {
 import { observer } from 'mobx-react';
 import styles from './index.module.less';
 
-const offset = 10;
-const itemHeight = 40;
-const containerHeight = 410;
-const visibleCount = Math.ceil(containerHeight / itemHeight);
+const offset = 10; // 上下多余元素个数
+const itemHeight = 40; // 计算单个元素高度
+const containerHeight = 410; // 容器高度
+const visibleCount = Math.ceil(containerHeight / itemHeight); // 可视区域可放置元素个数
 
 export default observer(() => {
   const [allData] = useState(() => {
