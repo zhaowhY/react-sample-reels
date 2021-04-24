@@ -25,7 +25,6 @@ export default observer(() => {
 
   useEffect(() => {
     if (allData.length <= visibleCount) return;
-    let timer = null;
     function setHeight() {
       const { scrollTop } = containerRef.current;
       const startIndex = Math.ceil(scrollTop / 40);
@@ -39,12 +38,19 @@ export default observer(() => {
 
     setHeight();
 
-    containerRef.current.addEventListener('wheel', () => {
+    let timer = null;
+
+    function debounce(func, delay) {
       if (timer) return;
-      setHeight();
-      clearTimeout(timer);
-      timer = null;
-    }, 120);
+      timer = setTimeout(() => {
+        func();
+        timer = null;
+      }, Number(delay));
+    }
+
+    containerRef.current.addEventListener('wheel', () => {
+      debounce(setHeight, 120);
+    });
   }, [allData]);
 
   return (

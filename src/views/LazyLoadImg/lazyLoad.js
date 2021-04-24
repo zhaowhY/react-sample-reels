@@ -7,10 +7,9 @@
 let timer = null;
 function debounce(func, delay) {
   if (timer) return;
-  if (timer === null) func(); // 第一次立即执行
   timer = setTimeout(() => {
     func();
-    timer = false;
+    timer = null;
   }, Number(delay));
 }
 
