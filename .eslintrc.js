@@ -22,7 +22,7 @@ module.exports = {
         peerDependencies: false
       }
     ],
-    'no-console': 'off',
+    'no-console': 'warn',
     'no-debugger': 'warn',
     // 'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'max-len': [
@@ -45,6 +45,7 @@ module.exports = {
     'class-methods-use-this': [0],
     'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
     'react/prefer-stateless-function': 0,
+    'import/extensions': [0],
     'react/self-closing-comp': 0,
     'react/no-array-index-key': 0,
     'implicit-arrow-linebreak': [0, 'brace-style'],
@@ -62,6 +63,7 @@ module.exports = {
     'jsx-a11y/no-noninteractive-tabindex': [0],
     'no-throw-literal': 'off',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
+    'react-hooks/exhaustive-deps': 'warn',
+    'import/order': ['warn']
   }
 };

@@ -41,5 +41,9 @@ export const externalLinks = [
   {
     path: 'https://kongkong99.github.io/react-tinymce/',
     name: '富文本编辑器'
-  }
+  },
+  {
+    path: 'https://kongkong99.github.io/react-g6-flowDiagram/#/list',
+    name: '基于G6流程图'
+  },
 ];
